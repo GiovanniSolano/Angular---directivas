@@ -1,0 +1,14 @@
+<h2>Directiva ngClass</h2>
+<small>Agregar o quitar clases CSS de manera dinámica</small>
+
+<!-- Usando un string -->
+<!-- <div class="semaforo" [ngClass]="cadenaClases"></div> -->
+<!-- Usando un array -->
+<!-- <div class="semaforo" [ngClass]="arrayClases"></div> -->
+<div class="semaforo" [ngClass]="{semaforo: true, redondo: true,
+     rojo: (colorSelected === 'r'),
+     verde: (colorSelected === 'v'),
+     amarillo: (colorSelected === 'a')}"></div>
+
+
+<p>*************************************************************************************************************************************************************************</p>
