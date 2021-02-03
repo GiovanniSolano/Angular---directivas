@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { NgClassComponent } from './components/ng-class/ng-class.component';
 import { NgIfComponent } from './components/ng-if/ng-if.component';
+import { NgForComponent } from './components/ng-for/ng-for.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgStyleComponent,
     NgClassComponent,
-    NgIfComponent
+    NgIfComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,

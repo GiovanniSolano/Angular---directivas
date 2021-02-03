@@ -1,0 +1,27 @@
+<small>
+    <h3>ngFor:</h3>
+    Permite ejecutar bucles. Con esta directiva estructural podemos evaluar de acuerdo a nuestra condición n veces 
+</small>
+<br>
+<button (click)="onClick()">Agregar persona</button>
+
+<ul>
+    <li *ngFor="let persona of personas">
+        {{persona.nombre}} {{persona.apellido}} - {{persona.edad}}
+    </li>
+</ul>
+
+<table border="1">
+    <thead>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let persona of personas">
+            <td>{{persona.nombre}}</td>
+            <td>{{persona.apellido}}</td>
+            <td>{{persona.edad}}</td>
+        </tr>
+    </tbody>
+</table>
