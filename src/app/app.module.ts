@@ -12,6 +12,8 @@ import { FormularioComponent } from './ejercicioTo-do/formulario/formulario.comp
 import { ListaComponent } from './ejercicioTo-do/lista/lista.component';
 import { InicioComponent } from './ejercicioTo-do/inicio/inicio.component';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import { ListaProductosComponent } from './components/ejercicioCajaRegistradora/lista-productos/lista-productos.component';
+import { ComandaComponent } from './components/ejercicioCajaRegistradora/comanda/comanda.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
     FormularioComponent,
     ListaComponent,
     InicioComponent,
-    NgSwitchComponent
+    NgSwitchComponent,
+    ListaProductosComponent,
+    ComandaComponent
   ],
   imports: [
     BrowserModule,
