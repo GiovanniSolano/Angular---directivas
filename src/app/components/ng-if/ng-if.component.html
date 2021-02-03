@@ -1,0 +1,20 @@
+<h2>Directivas estructurales</h2>
+<small>Modifican los elementos que podamos encontrar en una plantilla de nuestros componentes
+    que ponen, quitan elementos, los van modificando en función en eventos o cosas que vayan pasando
+    <br>
+    <h3>ngIf:</h3>Mostrar u ocultar elementos en función a ciertas expresiones - true / false, el elemento de desaparece totalmente
+</small>
+
+<!-- <p *ngIf="mostrar; then mainBlock else elseBlock">Contenido del párrafo</p>
+<ng-template #mainBlock>
+    <p>Contenido del primer párrafo</p>
+</ng-template>
+<ng-template #elseBlock>
+    <p>Contenido del párrafo 3</p>
+</ng-template> -->
+
+<p *ngIf="mostrar">Contenido del primer párrafo</p>
+<p *ngIf="!mostrar">Contenido del segundo párrafo</p>
+
+
+<button (click)="onClickMostrar()">Mostrat/Ocultar</button>
