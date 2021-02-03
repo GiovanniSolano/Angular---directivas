@@ -1,0 +1,29 @@
+.lista {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.lista>div {
+    width: 50%;
+    margin: 20px;
+    text-align: right;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-body {
+    width: 250px;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.completada {
+    background-color: green;
+}
+
+.incompleta {
+    background-color: red;
+}

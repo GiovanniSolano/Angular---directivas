@@ -5,3 +5,17 @@
 <app-ng-class></app-ng-class>
 <app-ng-if></app-ng-if>
 <app-ng-for></app-ng-for>
+<app-ng-switch></app-ng-switch>
+<p>*************************************************************************************************************************************************************************</p>
+<h2>Ejercicio To-Do haciendo uso de la directivas</h2>
+
+<div class="ejercicio">
+    <div class="formulario">
+        <app-formulario (tareaRegistrada)="agregarTareaLista($event)"></app-formulario>
+    </div>
+    <div class="tareas">
+        <app-lista [tareas]="tareas"></app-lista>
+    </div>
+</div>
+
+<p>*************************************************************************************************************************************************************************</p>

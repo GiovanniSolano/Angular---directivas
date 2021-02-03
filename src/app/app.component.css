@@ -1,0 +1,10 @@
+.ejercicio {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.ejercicio>div {
+    width: 50%;
+    margin: 20px;
+    text-align: center;
+}

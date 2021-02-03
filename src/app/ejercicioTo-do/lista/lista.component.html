@@ -1,0 +1,11 @@
+<h3>Lista de tareas</h3>
+
+<div class="card">
+    <div class="card-body" [ngClass]="{'incompleta': !tarea.completada, 'completada': tarea.completada }" *ngFor="let tarea of tareas; let i = index">
+        <p>{{tarea.titulo}}</p>
+        <p>{{tarea.descripcion}}</p>
+        <button *ngIf="!tarea.completada" (click)="tarea.completada = true">Completa</button>
+        <button *ngIf="tarea.completada" (click)="tarea.completada = false">Incompleta</button>
+        <button (click)="borrarTarea(i)">Borrar</button>
+    </div>
+</div>

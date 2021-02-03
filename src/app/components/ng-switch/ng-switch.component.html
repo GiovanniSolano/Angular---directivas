@@ -1,0 +1,14 @@
+<small>
+    <h3>ngSwitch:</h3>
+    En esta directiva se pueden crear los diferentes casos que deseamos evaluar y cuando se cumple la condición esperada, oculta/muestra el HTML 
+</small>
+<br>
+
+<div [ngSwitch]="opcionNumero">
+    <p *ngSwitchCase="1">Opción 1 </p>
+    <p *ngSwitchCase="2">Opción 2</p>
+    <p *ngSwitchCase="3">Opción 3</p>
+    <p *ngSwitchCase="4">Opción 4</p>
+    <p *ngSwitchDefault>Ninguna de las anteriores</p>
+    <button (click)="cambiarValor()">Cambiar párrafo</button>
+</div>

@@ -1,0 +1,14 @@
+<form (ngSubmit)="agregarTarea(formtodo)" #formtodo="ngForm">
+    <div class="form">
+        <div class="formulario">
+            <p>Titulo de la tarea</p>
+            <input [(ngModel)]="tarea.titulo" name="tarea.titulo" type="text" placeholder="Ingresa el titulo">
+            <p>Descripción</p>
+            <input [(ngModel)]="tarea.descripcion" name="tarea.descripcion" type="text" placeholder="Ingresa la descripción">
+            <br><br>
+            <button>Agregar tarea</button>
+        </div>
+
+    </div>
+
+</form>
