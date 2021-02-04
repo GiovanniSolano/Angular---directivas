@@ -49,3 +49,18 @@
 <p>Pasar del elemento padre a hijo como en los componentes</p>
 
 <p>*************************************************************************************************************************************************************************</p>
+
+
+<div class="containerCompras">
+    <div class="row">
+        <app-formulario-compras (productoCreado)="onProductoCreado($event)"></app-formulario-compras>
+    </div>
+    <div class="row listas">
+        <div class="izquierda">
+            <app-lista-productos-compras (productoSeleccionado)="onProductoSeleccionadoCompra($event)" textoBoton="COMPRAR" [productosDeCompra]="productosDeCompraSeleccionados"></app-lista-productos-compras>
+        </div>
+        <div class="derecha">
+            <app-lista-productos-compras [productosDeCompra]="productosComprados" textoBoton="QUITAR" (productoSeleccionado)="onProductoNoSeleccionado($event)"></app-lista-productos-compras>
+        </div>
+    </div>
+</div>

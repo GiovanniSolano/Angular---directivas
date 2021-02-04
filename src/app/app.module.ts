@@ -15,6 +15,8 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { ListaProductosComponent } from './components/ejercicioCajaRegistradora/lista-productos/lista-productos.component';
 import { ComandaComponent } from './components/ejercicioCajaRegistradora/comanda/comanda.component';
 import { SubrayadoDirective } from './directivas/subrayado.directive';
+import { FormularioComprasComponent } from './ejercicioListaDeLaCompra/formulario-compras/formulario-compras.component';
+import { ListaProductosComprasComponent } from './ejercicioListaDeLaCompra/lista-productos-compras/lista-productos-compras.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { SubrayadoDirective } from './directivas/subrayado.directive';
     NgSwitchComponent,
     ListaProductosComponent,
     ComandaComponent,
-    SubrayadoDirective
+    SubrayadoDirective,
+    FormularioComprasComponent,
+    ListaProductosComprasComponent
   ],
   imports: [
     BrowserModule,

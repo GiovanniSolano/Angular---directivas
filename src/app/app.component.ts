@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Tarea } from './models/Tarea.model';
 import { Producto } from './models/Producto.model';
+import { ProductoDeCompra } from './models/ProductoDeCompra.model';
 
 @Component({
   selector: 'app-root',
@@ -16,11 +17,17 @@ export class AppComponent {
 
   productosSeleccionados: Producto[];
 
+  productosDeCompraSeleccionados: ProductoDeCompra[];
+
+  productosComprados: ProductoDeCompra[];
+
 
   constructor() {
 
 
     this.productosSeleccionados = [];
+    this.productosDeCompraSeleccionados = [];
+    this.productosComprados = [];
 
     this.arrComida = [
       new Producto('Enchiladas', 'https://dam.cocinafacil.com.mx/wp-content/uploads/2019/05/enchiladas-verdes.png', 30),
@@ -54,6 +61,20 @@ export class AppComponent {
       this.productosSeleccionados.push(producto);
     }
     
+  }
+
+  onProductoCreado(producto: ProductoDeCompra) {
+    this.productosDeCompraSeleccionados.push(producto);
+  }
+
+  onProductoSeleccionadoCompra(productoComprado) {
+    const prod = this.productosDeCompraSeleccionados.splice(productoComprado, 1);
+    this.productosComprados.push(prod[0]);
+  }
+
+  onProductoNoSeleccionado(productoNoComprado) {
+    const prod = this.productosComprados.splice(productoNoComprado, 1);
+    this.productosDeCompraSeleccionados.push(prod[0]);
   }
 
 
