@@ -28,3 +28,11 @@ h2 {
     width: 30%;
     padding: 10px;
 }
+
+.hover {
+    background-color: lightpink;
+}
+
+.noHover {
+    background-color: lightskyblue;
+}
